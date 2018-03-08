@@ -2,8 +2,8 @@
     const express = require('express');
     const app = express();
 
-    const api = require('./api');
-    const config = require('./config');
+    const api = require('./src/api');
+    const config = require('./src/config');
 
     config.configure(app);
 

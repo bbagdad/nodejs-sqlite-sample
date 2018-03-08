@@ -1,6 +1,4 @@
 (function () {
-    const express = require('express');
-    const app = express();
     const bodyParse = require('body-parser');
 
     const self = {};

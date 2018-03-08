@@ -34,7 +34,7 @@
         "templateOptions": {
             "label": "Submit",
             "url": "http://localhost:3000/",
-            "action": "SubmitForm",
+            "action": "SubmitContact",
             "className": [
                 "md-raised",
                 "md-primary"
