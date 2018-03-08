@@ -1,0 +1,123 @@
+[
+    {
+        "key": "fname",
+        "type": "input",
+        "templateOptions": {
+            "type": "text",
+            "label": "First Name",
+            "placeholder": "Enter your first name",
+            "required": true
+        }
+    },
+    {
+        "key": "lname",
+        "type": "input",
+        "templateOptions": {
+            "type": "text",
+            "label": "Last Name",
+            "placeholder": "Enter your last name",
+            "required": true
+        }
+    },
+    {
+        "key": "email",
+        "type": "input",
+        "templateOptions": {
+            "type": "email",
+            "label": "Email address",
+            "placeholder": "Enter email",
+            "required": true
+        }
+    },
+    {
+        "type": "submit",
+        "templateOptions": {
+            "label": "Submit",
+            "url": "http://localhost:3000/",
+            "action": "SubmitForm",
+            "className": [
+                "md-raised",
+                "md-primary"
+            ]
+        }
+    },
+    {
+        "type": "dialog",
+        "name": "popupgroup",
+        "templateOptions": {
+            "label": "Open Dialog",
+            "className": [
+                "md-raised",
+                "md-warn"
+            ],
+            "title": "Dialog Title",
+            "fields": [
+                {
+                    "wrapper": "dialog-content",
+                    "fieldGroup": [
+                        {
+                            "key": "popup_name",
+                            "type": "input",
+                            "templateOptions": {
+                                "type": "text",
+                                "label": "Pop First Name",
+                                "placeholder": "Enter your first name",
+                                "required": true
+                            }
+                        },
+                        {
+                            "key": "popup_last",
+                            "type": "input",
+                            "templateOptions": {
+                                "type": "text",
+                                "label": "Pop Last Name",
+                                "placeholder": "Enter your last name",
+                                "required": true
+                            }
+                        }
+                    ]
+                },
+                {
+                    "elementAttributes": {
+                        "layout": "row"
+                    },
+                    "wrapper": "dialog-actions",
+                    "fieldGroup": [
+                        {
+                            "type": "dialog-cancel",
+                            "templateOptions": {
+                                "label": "Cancel",
+                                "className": [
+                                    "md-raised",
+                                    "md-warn"
+                                ]
+                            }
+                        },
+                        {
+                            "type": "dialog-ok",
+                            "templateOptions": {
+                                "label": "OK",
+                                "className": [
+                                    "md-raised",
+                                    "md-primary"
+                                ]
+                            }
+                        },
+                        {
+                            "type": "dialog-submit",
+                            "templateOptions": {
+                                "label": "Submit",
+                                "url": "http://localhost:3000/",
+                                "action": "SubmitDialog",
+                                "className": [
+                                    "md-raised",
+                                    "md-primary"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+]
